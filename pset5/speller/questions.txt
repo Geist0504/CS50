@@ -1,0 +1,16 @@
+0.  The upper bounds of word character count in the English language. 
+    A pneumoconiosis caused by inhalation of very fine silicate or quartz dust
+1.  getrusage returns resource usage measures for supplied process
+2.  There are 16 variable
+3.  So that rusage has a start point and an end point to calculate the usage stats between
+4.  Main takes a text as it's third argument. It then initializes a pointer value & opens that text.
+    A character array is intialized to a size 1 greater than the limit for word length in the language (english) to allow for the endo of string char \0
+    A character is read from the text. If the character is a "proper" one (any letter or an apostrophe), it is appeneded to the array.
+    If it is not, the loop skips to the next cycles through the remaining characters until it finds an end (EOF). 
+    If the array exceeds the length of a potential word, the same consupmtion prcess occurs. Once the EOF flags without the other breaks
+    we have found a word, '\0' is appended to end the string, it is counted, 
+    checked for a mispelling and index is set to 0 to prepare for a new work
+    
+5.  fscanf must be supplied directives which indicate cases which to end the batch being scanned. 
+    Without good control over the format of our inputs, there is risk we won't be able to supply all cases, leading to bugs
+6.  We use constant so the value is immutable
